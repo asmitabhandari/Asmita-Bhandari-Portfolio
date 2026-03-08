@@ -5,8 +5,8 @@ import { THEMES } from '../hooks/useTheme'
 
 const downloadResume = () => {
   const a = document.createElement('a')
-  a.href = '/Aahana_Bobade_Resume.pdf'
-  a.download = 'Aahana_Bobade_Resume.pdf'
+  a.href = '/Asmita_Bhandari_Resume.pdf'
+  a.download = 'Asmita_Bhandari_Resume.pdf'
   document.body.appendChild(a)
   a.click()
   document.body.removeChild(a)
@@ -34,10 +34,8 @@ const TabIcon = () => (
 )
 
 const LINKS = [
-  { icon: <GHIcon />,  label: 'GitHub',   href: 'https://github.com/aahanabobade',                             color: '#e6edf3' },
-  { icon: <LIIcon />,  label: 'LinkedIn', href: 'https://www.linkedin.com/in/aahana-bobade',                   color: '#0a66c2' },
-  { icon: <MedIcon />, label: 'Medium',   href: 'https://medium.com/@aahanabobade',                            color: '#d0d0d0' },
-  { icon: <TabIcon />, label: 'Tableau',  href: 'https://public.tableau.com/app/profile/aahana.bobade/vizzes', color: '#e97627' },
+  { icon: <GHIcon />, label: 'GitHub', href: 'https://github.com/asmitabhandari', color: '#e6edf3' },
+  { icon: <LIIcon />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/asmita-bhandari1/', color: '#0a66c2' },
 ]
 
 export default function MobileSidebar({ activeFile, onNavigate, onClose, themeId, onThemeChange, onToggleCopilot }) {
@@ -110,7 +108,7 @@ export default function MobileSidebar({ activeFile, onNavigate, onClose, themeId
           {view === 'explorer' && (
             <>
               <div className="px-4 py-2 text-[10px] font-semibold tracking-widest uppercase" style={{ color: 'var(--dim)' }}>
-                📁 aahana-bobade
+                📁 asmita-bhandari-portfolio
               </div>
               <div className="pb-2">
                 {FILES.map(file => {
@@ -179,7 +177,7 @@ export default function MobileSidebar({ activeFile, onNavigate, onClose, themeId
                        stroke="#9370db" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 2L9.5 9.5 2 12l7.5 2.5L12 22l2.5-7.5L22 12l-7.5-2.5L12 2z"/>
                   </svg>
-                  <span className="flex-1">Ask Aahana's Copilot</span>
+                  <span className="flex-1">Ask Asmita's Copilot</span>
                   <span className="text-[10px]" style={{ color: 'var(--dim)' }}>AI</span>
                 </button>
               </div>
@@ -208,7 +206,7 @@ export default function MobileSidebar({ activeFile, onNavigate, onClose, themeId
                        stroke="#b48eff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M12 2L9.5 9.5 2 12l7.5 2.5L12 22l2.5-7.5L22 12l-7.5-2.5L12 2z"/>
                   </svg>
-                  <span className="flex-1 font-medium">Open Aahana's Copilot</span>
+                  <span className="flex-1 font-medium">Open Asmita's Copilot</span>
                   <span className="text-[10px]" style={{ color: 'rgba(180,142,255,0.55)' }}>AI ✨</span>
                 </button>
               </div>
@@ -293,8 +291,8 @@ export default function MobileSidebar({ activeFile, onNavigate, onClose, themeId
                 <p className="text-[11px] mb-1" style={{ color: 'var(--dim)' }}>Portfolio v3.0 · React + Vite + Tailwind</p>
                 <p className="text-[11px]" style={{ color: 'var(--dim)' }}>
                   Made with 💜 by{' '}
-                  <a href="https://github.com/aahanabobade" target="_blank" rel="noreferrer" style={{ color: 'var(--blue)' }}>
-                    Aahana Bobade
+                  <a href="https://github.com/asmitabhandari" target="_blank" rel="noreferrer" style={{ color: 'var(--blue)' }}>
+                    Asmita Bhandari
                   </a>
                 </p>
               </div>

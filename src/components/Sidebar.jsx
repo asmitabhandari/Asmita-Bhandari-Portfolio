@@ -3,8 +3,8 @@ import { FILE_ICONS } from '../icons'
 
 const downloadResume = () => {
   const a = document.createElement('a')
-  a.href = '/Aahana_Bobade_Resume.pdf'
-  a.download = 'Aahana_Bobade_Resume.pdf'
+  a.href = '/Asmita_Bhandari_Resume.pdf'
+  a.download = 'Asmita_Bhandari_Resume.pdf'
   document.body.appendChild(a)
   a.click()
   document.body.removeChild(a)
@@ -65,7 +65,7 @@ export default function Sidebar({ activeFile, onFileClick, copilotOpen, onToggle
       <div className="px-3 py-2" style={{ borderTop: '1px solid var(--border)' }}>
         <button
           onClick={onToggleCopilot}
-          title="Open Aahana's AI Copilot (Ctrl+Shift+C)"
+          title="Open Asmita's AI Copilot (Ctrl+Shift+C)"
           style={{
             width:         '100%',
             display:       'flex',
@@ -123,7 +123,7 @@ export default function Sidebar({ activeFile, onFileClick, copilotOpen, onToggle
             color:      copilotOpen ? '#b48eff' : '#9370db',
             textAlign:  'left',
           }}>
-            Aahana's Copilot
+            Asmita's Copilot
           </span>
 
           <span style={{

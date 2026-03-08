@@ -86,7 +86,7 @@ export default function SkillsPage() {
       {/* Also familiar with pills */}
       <div className="reveal">
         <div className="text-[16px] uppercase tracking-[0.2em] text-vscode-yel mb-4 pb-2 border-b border-vscode-border">
-          Also familiar with
+          Coursework and complementary strengths
         </div>
         <div className="flex flex-wrap gap-2">
           {PILLS.map(p => (

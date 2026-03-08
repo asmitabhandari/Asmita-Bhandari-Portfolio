@@ -5,18 +5,18 @@ export default function AboutPage() {
   useReveal('about')
 
   const focus = [
-    ['🔭', 'Building scalable backend systems & AI integrations at EduVanceAI'],
-    ['🤖', 'Deep interest in NLP, LLMs & ML pipelines'],
-    ['🌱', 'Currently exploring RAG, MLOps & Vector Databases'],
-    ['💬', 'Talk to me about Python, APIs, Data Science'],
-    ['⚡', 'Making data stories non-data people actually get'],
-    ['✨', 'Always learning, always shipping'],
+    ['🔭', 'Building scalable backend systems & robust web applications'],
+    ['💻', 'Full-stack development with React, Node.js, and Python'],
+    ['🌱', 'Currently exploring cloud infrastructure and DevOps practices'],
+    ['💬', 'Talk to me about Python, React, APIs, and Backend Development'],
+    ['⚡', 'Using my skills to build impactful solutions and learn every day'],
+    ['✨', 'Passionate about clean code and thoughtful design'],
   ]
 
   return (
     <div className="px-12 py-12 max-w-[940px]">
       {/* Page comment */}
-      <p className="text-vscode-gcm italic text-[14px] mb-3">&lt;!-- about.html - Aahana Bobade --&gt;</p>
+      <p className="text-vscode-gcm italic text-[14px] mb-3">&lt;!-- about.html - Asmita Bhandari --&gt;</p>
       <h2 className="font-display text-[35px] font-extrabold text-vscode-bright tracking-tight mb-1">
         About Me
       </h2>
@@ -26,16 +26,20 @@ export default function AboutPage() {
       <div className="reveal bg-white/[0.025] border border-vscode-border rounded p-6 mb-4">
         <p className="text-[13px] text-vscode-dim leading-[1.9]">
           Hi! I'm{' '}
-          <strong className="text-vscode-blue font-medium">Aahana Bobade</strong>
-          , a software developer living at the crossroads of{' '}
-          <strong className="text-vscode-blue font-medium">backend engineering</strong>,{' '}
-          <strong className="text-vscode-blue font-medium">AI/ML</strong>, and{' '}
-          <strong className="text-vscode-blue font-medium">data science</strong>.
-          I love building systems that are not just functional but genuinely{' '}
-          <strong className="text-vscode-blue font-medium">intelligent and scalable</strong>.
-          Currently a{' '}
-          <strong className="text-vscode-blue font-medium">Junior Software Developer at EduVanceAI</strong>,
-          building AI integrations and backend systems that power learning experiences for thousands of users daily.
+          <strong className="text-vscode-blue font-medium">Asmita Bhandari</strong>
+          , a Computer Science student at{' '}
+          <strong className="text-vscode-blue font-medium">Wayne State University</strong>
+          {' '}passionate about building{' '}
+          <strong className="text-vscode-blue font-medium">scalable web applications</strong>
+          {' '}and{' '}
+          <strong className="text-vscode-blue font-medium">robust backend systems</strong>.
+          I thrive on solving complex problems with{' '}
+          <strong className="text-vscode-blue font-medium">Python, React, and modern web technologies</strong>.
+          Currently working as a{' '}
+          <strong className="text-vscode-blue font-medium">Student Software Engineer Intern at Youth Tank Detroit</strong>
+          {' '}and{' '}
+          <strong className="text-vscode-blue font-medium">Full Stack Developer Intern at Brilliant</strong>,
+          where I'm building impactful applications and sharpening my skills in full-stack development.
         </p>
       </div>
 

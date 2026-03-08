@@ -50,17 +50,12 @@ export default function HomePage({ onNavigate }) {
   const socials = [
     { icon: <GitHubIcon />,    label: 'GitHub',    href: ME.links.github,      color: '#e6edf3' },
     { icon: <LinkedInIcon />,  label: 'LinkedIn',  href: ME.links.linkedin,    color: '#0a66c2' },
-    { icon: <MediumIcon />,    label: 'Medium',    href: ME.links.medium,      color: '#d0d0d0' },
-    { icon: <TableauIcon />,   label: 'Tableau',   href: ME.links.tableau,     color: '#e97627' },
-    { icon: <LeetCodeIcon />,  label: 'LeetCode',  href: ME.links.leetcode,    color: '#ffa116' },
-    { icon: <InstagramIcon />, label: 'Instagram', href: ME.links.instagram,   color: '#e1306c' },
     { icon: <EmailIcon />,     label: 'Email',     href: `mailto:${ME.email}`, color: '#4ec9b0' },
-    { icon: <YouTubeIcon/>,    label:'Youtube',    href: ME.links.youtube,     color: '#ff0000'}
-  ]
+  ].filter(s => s.href) // Only show links that are defined
 
   const stats = [
-    ['3+',  'Years'],
-    ['10+', 'Projects'],
+    ['2+',  'Years Experience'],
+    ['6+', 'Projects'],
     ['∞',   'Curiosity'],
     ['↑',   'Always Learning'],
   ]
@@ -80,9 +75,9 @@ export default function HomePage({ onNavigate }) {
             className="font-display font-extrabold leading-none text-vscode-bright tracking-[-2.5px]"
             style={{ fontSize: 'clamp(34px, 5.5vw, 68px)' }}
           >
-            Aahana<br />
+            Asmita<br />
             <em className="not-italic text-vscode-pink relative">
-              Bobade
+              Bhandari
               <span className="absolute bottom-[-2px] left-0 right-0 h-0.5
                                bg-gradient-to-r from-vscode-pink to-transparent" />
             </em>
@@ -97,9 +92,9 @@ export default function HomePage({ onNavigate }) {
         {/* Role badges */}
         <div className="flex flex-wrap gap-2 mb-4 opacity-0 animate-su-3">
           {[
-            ['#4ec9b0', 'Backend Engineer'],
-            ['#c586c0', 'AI / ML Dev'],
-            ['#4fc1ff', 'Data Scientist'],
+            ['#4ec9b0', 'Full-Stack Developer'],
+            ['#c586c0', 'Student Software Engineer'],
+            ['#4fc1ff', 'B.S. in Computer Science'],
           ].map(([color, label]) => (
             <div key={label}
               className="inline-flex items-center gap-1.5 px-3 py-1 text-xs
@@ -112,7 +107,7 @@ export default function HomePage({ onNavigate }) {
           <div className="inline-flex items-center gap-1.5 px-3 py-1 text-xs
                           border border-vscode-pink/30 rounded-sm text-vscode-pink">
             <span className="w-[7px] h-[7px] rounded-full bg-vscode-pink flex-shrink-0" />
-            @ EduVanceAI
+            @ Wayne State University 
           </div>
         </div>
 
@@ -124,9 +119,9 @@ export default function HomePage({ onNavigate }) {
         {/* Bio */}
         <p className="text-[14px] text-vscode-dim leading-[1.9] max-w-[520px] mb-7 opacity-0 animate-su-4">
           I live at the crossroads of{' '}
-          <strong className="text-vscode-blue font-medium">backend engineering</strong>,{' '}
-          <strong className="text-vscode-blue font-medium">AI/ML</strong>, and{' '}
-          <strong className="text-vscode-blue font-medium">data science</strong>.
+          <strong className="text-vscode-blue font-medium">Full-Stack Developer</strong>,{' '}
+          <strong className="text-vscode-blue font-medium">Student Software Engineer </strong>, and{' '}
+          <strong className="text-vscode-blue font-medium">Computer Science Student</strong>.
           I build systems that are genuinely{' '}
           <strong className="text-vscode-blue font-medium">intelligent and scalable</strong>.
         </p>

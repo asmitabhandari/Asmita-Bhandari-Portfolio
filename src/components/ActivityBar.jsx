@@ -129,8 +129,8 @@ export default function ActivityBar({
 
   const handleResumeDownload = () => {
     const link = document.createElement('a')
-    link.href = '/Aahana_Bobade_Resume.pdf'
-    link.download = 'Aahana_Bobade_Resume.pdf'
+    link.href = '/Asmita_Bhandari_Resume.pdf'
+    link.download = 'Asmita_Bhandari_Resume.pdf'
     link.click()
   }
 
@@ -170,7 +170,7 @@ export default function ActivityBar({
           </div>
 
           <div className="px-3 py-2 mt-1">
-            <a href="https://github.com/aahanabobade" target="_blank" rel="noreferrer"
+            <a href="https://github.com/asmitabhandari" target="_blank" rel="noreferrer"
                className="text-[11px] hover:opacity-75 transition-opacity" style={{ color: 'var(--blue)' }}>
               View on GitHub ↗
             </a>
@@ -184,7 +184,7 @@ export default function ActivityBar({
       {/* ✨ Copilot Chat */}
       <Btn
         icon={<CopilotIcon />}
-        title="Aahana's Copilot Chat"
+        title="Asmita's Copilot Chat"
         active={copilotOpen}
         onClick={onToggleCopilot}
       />
@@ -274,9 +274,9 @@ export default function ActivityBar({
             <p className="text-[11px] mb-1 text-vscode-dim">Portfolio v3.0 · React + Vite + Tailwind</p>
             <p className="text-[11px] text-vscode-dim">
               Made with 💜 by{' '}
-              <a href="https://github.com/aahanabobade" target="_blank" rel="noreferrer"
+              <a href="https://github.com/asmitabhandari" target="_blank" rel="noreferrer"
                  style={{ color: 'var(--blue)' }} className="hover:opacity-75 transition-opacity">
-                Aahana Bobade
+                Asmita Bhandari
               </a>
             </p>
           </div>

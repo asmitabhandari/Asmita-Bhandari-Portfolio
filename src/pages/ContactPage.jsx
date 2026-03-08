@@ -54,15 +54,10 @@ export default function ContactPage({ onToast }) {
   const formRef = useRef()
 
   const contactLinks = [
-    { icon: <MailIcon />,      label: 'email',     value: ME.email,                        href: `mailto:${ME.email}` },
-    { icon: <LinkedInIcon />,  label: 'linkedin',  value: 'linkedin.com/in/aahana-bobade', href: ME.links.linkedin },
-    { icon: <GitHubIcon />,    label: 'github',    value: 'github.com/aahanabobade',       href: ME.links.github },
-    { icon: <MediumIcon />,    label: 'medium',    value: 'medium.com/@aahanabobade',      href: ME.links.medium },
-    { icon: <TableauIcon />,   label: 'tableau',   value: 'Tableau Public Vizzes',         href: ME.links.tableau },
-    { icon: <LeetCodeIcon />,  label: 'leetcode',  value: 'leetcode.com/aahanabobade',     href: ME.links.leetcode },
-    { icon: <YouTubeIcon />,   label: 'youtube',   value: 'youtube.com/@aahanabobade',     href: ME.links.youtube },
-    { icon: <InstagramIcon />, label: 'instagram', value: 'instagram.com/aahanabobade1',   href: ME.links.instagram },
-  ]
+    { icon: <MailIcon />,      label: 'email',     value: ME.email,                          href: `mailto:${ME.email}` },
+    { icon: <LinkedInIcon />,  label: 'linkedin',  value: 'linkedin.com/in/asmita-bhandari', href: ME.links.linkedin },
+    { icon: <GitHubIcon />,    label: 'github',    value: 'github.com/asmitabhandari',       href: ME.links.github },
+  ].filter(link => link.href) // Only show links that are defined
 
   const handleSend = async () => {
     const form = formRef.current

@@ -133,7 +133,7 @@ export default function MenuBar({
           <Sep />
           <Item label="Download Resume" onClick={() => act(() => {
             const a = document.createElement('a')
-            a.href = '/resume.pdf'; a.download = 'Aahana_Bobade_Resume.pdf'; a.click()
+            a.href = '/Asmita_Bhandari_Resume.pdf'; a.download = 'Asmita_Bhandari_Resume.pdf'; a.click()
           })} />
         </MenuDropdown>
       </div>
@@ -157,7 +157,7 @@ export default function MenuBar({
           <Sep />
           <Item label="Toggle Sidebar"      shortcut="Ctrl+B"       onClick={() => act(onToggleSidebar)} />
           <Item label="Toggle Terminal"     shortcut="Ctrl+`"        onClick={() => act(onToggleTerm)} />
-          <Item label="✨ Aahana's Copilot" shortcut="Ctrl+Shift+C" onClick={() => act(onToggleCopilot)} highlight />
+          <Item label="✨ Asmita's Copilot" shortcut="Ctrl+Shift+C" onClick={() => act(onToggleCopilot)} highlight />
           <Sep />
           <Item label="Enter Full Screen" shortcut="F11" onClick={() => act(() => {
             !document.fullscreenElement
@@ -235,15 +235,15 @@ export default function MenuBar({
           ))}
           <Sep />
           <Item label="GitHub ↗"
-            onClick={() => act(() => window.open('https://github.com/aahanabobade', '_blank'))} />
+            onClick={() => act(() => window.open('https://github.com/asmitabhandari', '_blank'))} />
           <Item label="About"
-            onClick={() => act(() => alert('Aahana Bobade Portfolio v3.0\nBuilt with React + Vite + Tailwind 💜'))} />
+            onClick={() => act(() => alert('Asmita Bhandari Portfolio v3.0\nBuilt with React + Vite + Tailwind'))} />
         </MenuDropdown>
       </div>
 
       {/* ── Copilot — after Help, no dropdown, directly opens chat ── */}
       <div>
-        <button className={menuBtn} onClick={onToggleCopilot} title="Toggle Aahana's Copilot (Ctrl+Shift+C)">
+        <button className={menuBtn} onClick={onToggleCopilot} title="Toggle Asmita's Copilot (Ctrl+Shift+C)">
           Copilot
         </button>
       </div>

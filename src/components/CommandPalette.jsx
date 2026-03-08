@@ -16,7 +16,7 @@ function CopilotSVG() {
 const COMMANDS = [
   {
     id:       'copilot',
-    name:     "Open Aahana's Copilot",
+    name:     "Open Asmita's Copilot",
     hint:     'Ctrl+Shift+C',
     isAction: true,
     icon:     <CopilotSVG />,

@@ -14,9 +14,9 @@ export default function ExperiencePage() {
 
       {/* Timeline */}
       <div className="pl-3 border-l border-vscode-border">
-        {EXPERIENCE.map((exp, i) => (
+        {EXPERIENCE.map((exp) => (
           <div
-            key={exp.date}
+            key={`${exp.company}-${exp.date}`}
             className={`reveal relative pl-5 mb-9 ${exp.current ? 'tl-dot' : 'tl-dot-dim'}`}
           >
             {/* Date */}
@@ -31,7 +31,16 @@ export default function ExperiencePage() {
             <div className="text-[14px] text-vscode-blue mb-2.5">@ {exp.company}</div>
 
             {/* Description */}
-            <p className="text-[14px] text-vscode-dim leading-[1.8] mb-3">{exp.desc}</p>
+            <p className="text-[14px] text-vscode-dim leading-[1.8] mb-2">{exp.desc}</p>
+
+            {/* Formatted impact bullets */}
+            {Array.isArray(exp.points) && exp.points.length > 0 && (
+              <ul className="mb-3 pl-5 list-disc text-[13px] text-vscode-dim leading-[1.75] space-y-1">
+                {exp.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            )}
 
             {/* Tags */}
             <div className="flex flex-wrap gap-1.5">

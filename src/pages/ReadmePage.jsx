@@ -2,18 +2,19 @@ import { ME } from '../data'
 
 export default function ReadmePage() {
   const stackItems = [
-    ['Languages', ['Python', 'TypeScript', 'SQL', 'JavaScript', 'Java']],
-    ['AI / ML',   ['PyTorch', 'LangChain', 'HuggingFace', 'scikit-learn', 'TensorFlow']],
-    ['Backend',   ['FastAPI', 'Flask', 'Django', 'PostgreSQL', 'Redis']],
-    ['DevOps',    ['Docker', 'AWS', 'Linux', 'Git']],
+    ['Languages', ['Python', 'JavaScript', 'TypeScript', 'Java', 'C++', 'SQL']],
+    ['Backend',   ['FastAPI', 'Node.js', 'Express', 'RESTful APIs', 'GraphQL']],
+    ['Frontend',  ['React', 'React Native', 'HTML', 'CSS']],
+    ['Databases', ['PostgreSQL', 'MongoDB', 'NoSQL']],
+    ['DevOps',    ['Docker', 'AWS', 'Git', 'Firebase']],
   ]
 
   const badges = [
-    ['🔵', 'Python',     '#3572a5'],
-    ['🔷', 'TypeScript', '#3178c6'],
+    ['🐍', 'Python',     '#3572a5'],
+    ['⚛️', 'React',      '#61dafb'],
     ['⚡', 'FastAPI',    '#4ec9b0'],
-    ['🧠', 'LangChain',  '#ff6fd8'],
-    ['🐍', 'PyTorch',    '#ef4444'],
+    ['🟢', 'Node.js',    '#68a063'],
+    ['🗄️', 'PostgreSQL','#336791'],
   ]
 
   return (
@@ -21,7 +22,7 @@ export default function ReadmePage() {
       {/* H1 */}
       <h1 className="font-display text-[35px] font-extrabold text-vscode-bright
                      pb-2.5 border-b border-vscode-border mb-3">
-        Aahana Bobade
+        Asmita Bhandari
       </h1>
 
       <p className="text-[14px] text-vscode-dim leading-relaxed mb-2.5">
@@ -55,10 +56,10 @@ export default function ReadmePage() {
 
       <ul className="pl-6 mb-3 space-y-1">
         {[
-          ['🔭', 'Building', 'scalable AI integrations', 'at EduVanceAI'],
-          ['🤖', 'NLP, LLMs, RAG pipelines, Vector DBs', '', ''],
-          ['⚡', 'Making', 'data stories non-data people get', ''],
-          ['✨', 'Always learning, always shipping', '', ''],
+          ['🔭', 'Building', 'reliable full-stack systems', 'through internships and coursework'],
+          ['⚙️', 'Focused on', 'Python, React, APIs, and backend engineering', ''],
+          ['📚', 'Growing with', 'hands-on projects from 2023-2026', 'across C++ and Python'],
+          ['✨', 'Always learning, always building', '', ''],
         ].map(([icon, pre, bold, post], i) => (
           <li key={i} className="text-[13px] text-vscode-dim leading-[1.8]">
             {icon} {pre}{' '}
@@ -97,9 +98,9 @@ export default function ReadmePage() {
       <ul className="pl-5 space-y-1">
         {[
           ['Email',    ME.email],
-          ['GitHub',   'aahanabobade'],
-          ['LinkedIn', 'aahana-bobade'],
-          ['Tableau',  'aahana.bobade'],
+          ['GitHub',   'asmitabhandari'],
+          ['LinkedIn', 'asmita-bhandari1'],
+          ['Location', 'Wixom, Michigan'],
         ].map(([label, val]) => (
           <li key={label} className="text-[14px] text-vscode-dim leading-[1.8]">
             {label}: <strong className="text-vscode-text font-medium">{val}</strong>
@@ -110,7 +111,7 @@ export default function ReadmePage() {
       <hr className="border-none border-t border-vscode-border my-4" />
 
       <p className="text-s text-vscode-dim text-center">
-        Made with 🤍 by Aahana · {new Date().getFullYear()}
+        Made with care by Asmita · {new Date().getFullYear()}
       </p>
     </div>
   )

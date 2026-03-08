@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+﻿import { useState, useEffect, useRef } from 'react'
 import { TERMINAL_FS_FILES, TERMINAL_FILE_MAP } from '../data'
 
 export default function Terminal({ onClose, onOpenFile }) {
@@ -31,17 +31,17 @@ export default function Terminal({ onClose, onOpenFile }) {
       case 'help':
         push([
           { type: 'ok',  text: 'Available commands:' },
-          { type: 'out', text: '  ls               — list files in current directory' },
-          { type: 'out', text: '  pwd              — print working directory' },
-          { type: 'out', text: '  cd <dir>         — change directory (cd .. to go up)' },
-          { type: 'out', text: '  cat <file>       — view / open a file in the editor' },
-          { type: 'out', text: '  open <file>      — same as cat' },
-          { type: 'out', text: '  whoami           — who am I?' },
-          { type: 'out', text: '  echo <text>      — print text' },
-          { type: 'out', text: '  date             — show current date & time' },
-          { type: 'out', text: '  git log          — show recent commits' },
-          { type: 'out', text: '  python --version — show Python version' },
-          { type: 'out', text: '  clear            — clear the terminal' },
+          { type: 'out', text: '  ls               ΓÇö list files in current directory' },
+          { type: 'out', text: '  pwd              ΓÇö print working directory' },
+          { type: 'out', text: '  cd <dir>         ΓÇö change directory (cd .. to go up)' },
+          { type: 'out', text: '  cat <file>       ΓÇö view / open a file in the editor' },
+          { type: 'out', text: '  open <file>      ΓÇö same as cat' },
+          { type: 'out', text: '  whoami           ΓÇö who am I?' },
+          { type: 'out', text: '  echo <text>      ΓÇö print text' },
+          { type: 'out', text: '  date             ΓÇö show current date & time' },
+          { type: 'out', text: '  git log          ΓÇö show recent commits' },
+          { type: 'out', text: '  python --version ΓÇö show Python version' },
+          { type: 'out', text: '  clear            ΓÇö clear the terminal' },
         ])
         break
 
@@ -50,7 +50,7 @@ export default function Terminal({ onClose, onOpenFile }) {
         break
 
       case 'pwd':
-        push([{ type: 'ok', text: `/home/aahana/${cwd === '~' ? '' : cwd}`.replace(/\/$/, '') || '/home/aahana' }])
+        push([{ type: 'ok', text: `/home/asmita/${cwd === '~' ? '' : cwd}`.replace(/\/$/, '') || '/home/asmita' }])
         break
 
       case 'cd':
@@ -70,7 +70,7 @@ export default function Terminal({ onClose, onOpenFile }) {
         }
         const pageId = TERMINAL_FILE_MAP[arg]
         if (pageId) {
-          push([{ type: 'ok', text: `Opening ${arg} in editor…` }])
+          push([{ type: 'ok', text: `Opening ${arg} in editorΓÇª` }])
           setTimeout(() => onOpenFile(pageId), 300)
         } else {
           push([
@@ -83,10 +83,9 @@ export default function Terminal({ onClose, onOpenFile }) {
 
       case 'whoami':
         push([
-          { type: 'ok',  text: 'aahana' },
-          { type: 'out', text: 'Junior Software Developer @ EduVanceAI' },
-          { type: 'out', text: 'Backend Engineer · AI/ML Developer · Data Scientist' },
-          { type: 'out', text: 'India 🇮🇳  ·  aahanabobade@gmail.com' },
+          { type: 'ok',  text: 'asmita' },
+          { type: 'out', text: 'Student Software Engineer | Full-Stack Developer' },
+          { type: 'out', text: 'Wixom, Michigan  |  asmitabhandari1234@gmail.com' },
         ])
         break
 
@@ -105,7 +104,7 @@ export default function Terminal({ onClose, onOpenFile }) {
       case 'git':
         if (arg.startsWith('log')) {
           push([
-            { type: 'out', text: 'a3f1c2e (HEAD → main) feat: add RAG pipeline with LangChain' },
+            { type: 'out', text: 'a3f1c2e (HEAD ΓåÆ main) feat: add RAG pipeline with LangChain' },
             { type: 'out', text: 'b7d4a1f fix: optimise FastAPI response time' },
             { type: 'out', text: 'd1f8c4a chore: deploy to AWS ECS' },
             { type: 'out', text: 'e2a0b5c feat: PostgreSQL connection pooling' },
@@ -130,7 +129,7 @@ export default function Terminal({ onClose, onOpenFile }) {
         break
 
       default:
-        push([{ type: 'err', text: `command not found: ${cmd} — type 'help' for commands` }])
+        push([{ type: 'err', text: `command not found: ${cmd} ΓÇö type 'help' for commands` }])
     }
   }
 
@@ -163,7 +162,7 @@ export default function Terminal({ onClose, onOpenFile }) {
 
   const Prompt = () => (
     <>
-      <span className="text-vscode-green">aahana</span>
+      <span className="text-vscode-green">asmita</span>
       <span className="text-vscode-dim">@portfolio</span>
       <span className="text-vscode-dim">:</span>
       <span className="text-vscode-green">{cwd}</span>
@@ -192,7 +191,7 @@ export default function Terminal({ onClose, onOpenFile }) {
           onClick={onClose}
           className="ml-auto text-vscode-dim hover:text-vscode-text text-sm transition-colors"
         >
-          ✕
+          Γ£ò
         </button>
       </div>
 

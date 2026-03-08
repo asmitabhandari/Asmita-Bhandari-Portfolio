@@ -74,7 +74,7 @@ export default function App() {
 
   const navigate = useCallback((id) => {
     if (id === 'resume') {
-      window.open('/Aahana_Bobade_Resume.pdf', '_blank')
+      window.open('/Asmita_Bhandari_Resume.pdf', '_blank')
       return
     }
     setOpenTabs(tabs => tabs.includes(id) ? tabs : [...tabs, id])
@@ -413,7 +413,7 @@ export default function App() {
 
           <button
             onClick={toggleCopilot}
-            title="Aahana's Copilot (Ctrl+Shift+C)"
+            title="Asmita's Copilot (Ctrl+Shift+C)"
             style={{
               flexShrink:0, width:'28px', height:'28px', borderRadius:'4px',
               display:'flex', alignItems:'center', justifyContent:'center',

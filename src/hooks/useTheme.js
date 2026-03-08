@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 export const THEMES = [
-  { id: 'default',      name: 'Aahana Dark',  icon: '💜', accent: '#007acc' },
+  { id: 'default',      name: 'Asmita Dark',  icon: '💜', accent: '#007acc' },
   { id: 'rose-pine',    name: 'Rosé Pine',    icon: '🌸', accent: '#eb6f92' },
   { id: 'tokyo-night',  name: 'Tokyo Night',  icon: '🌃', accent: '#7aa2f7' },
   { id: 'catppuccin',   name: 'Catppuccin',   icon: '🐱', accent: '#cba6f7' },
@@ -9,7 +9,7 @@ export const THEMES = [
   { id: 'gruvbox',      name: 'Gruvbox',      icon: '🔥', accent: '#fabd2f' },
 ]
 
-const STORAGE_KEY = 'aahana-portfolio-theme'
+const STORAGE_KEY = 'asmita-portfolio-theme'
 
 export function useTheme() {
   const [themeId, setThemeId] = useState(

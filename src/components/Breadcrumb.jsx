@@ -7,8 +7,8 @@ export default function Breadcrumb({ activeFile }) {
 
   const initialParts =
     file.folder === 'root'
-      ? ['aahana-bobade', file.name]
-      : ['aahana-bobade', file.folder, file.name]
+      ? ['asmita-bhandari-portfolio', file.name]
+      : ['asmita-bhandari-portfolio', file.folder, file.name]
 
   const [parts, setParts] = useState(initialParts)
   const [dragIndex, setDragIndex] = useState(null)

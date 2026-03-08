@@ -1,4 +1,4 @@
-import { FILES } from '../data'
+﻿import { FILES } from '../data'
 import { useClock } from '../hooks/useClock'
 import ThemePicker from './ThemePicker'
 
@@ -11,21 +11,21 @@ export default function StatusBar({ activeFile, onToggleTerm, themeId, onThemeCh
       style={{ gridArea: 'status', background: 'var(--blue2)' }}
       className="flex items-center px-2 sm:px-3 text-[10px] sm:text-[11px] text-white/85 gap-1 sm:gap-3 select-none overflow-hidden"
     >
-      {/* ── Left side ── */}
+      {/* â”€â”€ Left side â”€â”€ */}
       <StatusItem onClick={onToggleTerm} className="flex-shrink-0">
-        ⚠ 0 <span className="hidden xs:inline">&nbsp; ⊗ 0</span>
+        âš  0 <span className="hidden xs:inline">&nbsp; âŠ— 0</span>
       </StatusItem>
 
-      <StatusItem className="flex-shrink-0 hidden sm:flex">⎇ main</StatusItem>
+      <StatusItem className="flex-shrink-0 hidden sm:flex">âŽ‡ main</StatusItem>
 
       <StatusItem className="hidden md:flex">
-        🔄 Aahana's Portfolio
+        ðŸ”„ Asmita's Portfolio
       </StatusItem>
 
-      {/* ── Right side ── */}
+      {/* â”€â”€ Right side â”€â”€ */}
       <div className="ml-auto flex items-center gap-0.5 sm:gap-2 flex-shrink-0">
 
-        {/* Copilot — same style as every other item, no special highlight */}
+        {/* Copilot â€” same style as every other item, no special highlight */}
         <StatusItem onClick={onToggleCopilot} className="flex-shrink-0">
           Copilot
         </StatusItem>
