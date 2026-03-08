@@ -11,11 +11,6 @@ export const ME = {
   links: {
     github: "https://github.com/asmitabhandari",
     linkedin: "https://www.linkedin.com/in/asmita-bhandari1/",
-    medium: "",
-    tableau: "",
-    youtube: "",
-    instagram: "",
-    leetcode: "",
   },
 }
 
